@@ -1,0 +1,56 @@
+{
+ "charts": [],
+ "creation": "2026-05-05 00:00:00.000000",
+ "doctype": "Workspace",
+ "icon": "message",
+ "is_hidden": 0,
+ "label": "Chatwoot",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chat en Vivo",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Panel de Chat",
+   "link_to": "chatwoot-chat",
+   "link_type": "Page",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Configuración Chatwoot",
+   "link_to": "Chatwoot Settings",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-05-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Chatwoot Erp",
+ "name": "Chatwoot",
+ "owner": "Administrator",
+ "public": 1,
+ "restrict_to_domain": "",
+ "roles": [],
+ "shortcuts": [
+  {
+   "label": "Chat",
+   "link_to": "chatwoot-chat",
+   "type": "Page"
+  },
+  {
+   "label": "Configuración",
+   "link_to": "Chatwoot Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "Chatwoot"
+}

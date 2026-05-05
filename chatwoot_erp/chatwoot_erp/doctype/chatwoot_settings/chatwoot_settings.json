@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "creation": "2026-05-05 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "chatwoot_url",
+  "api_access_token",
+  "account_id",
+  "webhook_secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "chatwoot_url",
+   "fieldtype": "Data",
+   "label": "Chatwoot URL",
+   "reqd": 1,
+   "description": "Ej: https://app.chatwoot.com"
+  },
+{
+ "fieldname": "api_access_token",
+ "fieldtype": "Password",
+ "label": "API Access Token",
+ "reqd": 1,
+ "description": "Lo encuentras en Ajustes de Perfil > Access Token al final de la página."
+},
+  {
+   "fieldname": "account_id",
+   "fieldtype": "Int",
+   "label": "Account ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "webhook_secret",
+   "fieldtype": "Password",
+   "label": "Webhook Secret"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_single": 1,
+ "links": [],
+ "modified": "2026-05-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Chatwoot Erp",
+ "name": "Chatwoot Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

@@ -25,7 +25,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/chatwoot_erp/css/chatwoot_erp.css"
+app_include_css = ["/assets/chatwoot_erp/css/chatwoot_chat.css"]
 # app_include_js = "/assets/chatwoot_erp/js/chatwoot_erp.js"
 
 # include js, css files in header of web template
@@ -173,14 +173,16 @@ app_license = "mit"
 
 # Overriding Methods
 # ------------------------------
-#
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "chatwoot_erp.event.get_events"
-# }
-#
-# each overriding function accepts a `data` argument;
-# generated from the base implementation of the doctype dashboard,
-# along with any modifications made in other Frappe apps
+
+override_whitelisted_methods = {
+	"chatwoot_erp.webhook.handle": "chatwoot_erp.webhook.handle"
+}
+
+# Fixtures — export Workspace on bench export-fixtures
+fixtures = [
+	{"dt": "Workspace", "filters": [["name", "=", "Chatwoot"]]}
+]
+
 # override_doctype_dashboards = {
 # 	"Task": "chatwoot_erp.task.get_dashboard_data"
 # }
